@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all_users"
+                android:onClick="allUsers"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="upscQuiz"
+                android:text="@string/upsc_quiz" />
+
+            <Button
+                android:id="@+id/button8"
+                android:onClick="appscQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appsc_quiz" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="currentAppscQuiz"
+                android:text="@string/appsc_current_quiz" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="currentAffairs"
+                android:text="@string/current_affairs" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appscCurrentQuizResponse"
+                android:text="@string/appsc_current_quiz_response" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appscQuizResponse"
+                android:text="@string/appsc_quiz_response" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="upscQuizResponse"
+                android:text="@string/upsc_quiz_response" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appsc_essay_writing"
+                android:onClick="appscEssayWriting"/>
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appsc_study_note"
+                android:onClick="appscStudyNotes"/>
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appsc_answer_writing_practice"
+                android:onClick="appscAnswerWriting"/>
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upsc_study_notes"
+                android:onClick="upscStudyNotes"/>
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upsc_essay_writing"
+                android:onClick="upscEssayWriting"/>
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upsc_answer_writing_practice"
+                android:onClick="upscAnswerWriting"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appsbMaths"
+                android:text="@string/appsb_maths" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appsbReasoning"
+                android:text="@string/appsb_reasoning" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appsbEnglish"
+                android:text="@string/appsb_english" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="appsbGK"
+                android:text="@string/appsb_g_k" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sscBankMaths"
+                android:text="@string/ssc_bank_maths" />
+
+            <Button
+                android:id="@+id/button24"
+                android:onClick="sscBankReasoning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ssc_bank_reasoning" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sscBankEnglish"
+                android:text="@string/ssc_bank_english" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sscBankGK"
+                android:text="@string/ssc_bank_g_k" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="LogOutMe"
+                android:text="@string/sign_out"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
