@@ -17,9 +17,12 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class DisplayPdf extends AppCompatActivity {
@@ -61,8 +64,9 @@ public class DisplayPdf extends AppCompatActivity {
                         String storageName = ds.getKey();
                         PdfModel pdfModel = new PdfModel(name,url,storageName);
                         pdfModels.add(pdfModel);
-                        pdfListAdaptor.notifyDataSetChanged();
                     }
+                    Collections.reverse(pdfModels);
+                    pdfListAdaptor.notifyDataSetChanged();
                     progressBar.setVisibility(View.INVISIBLE);
                 }
                 else
